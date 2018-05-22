@@ -1,0 +1,57 @@
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Balajadia","3IS-A","THY2","314","07:00:00","08:30:00","Monday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Antonio Mildred","1IS-A","ENG2","314","08:30:00","10:00:00","Monday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Diaz","1IS-A","IS201","314","10:00:00","11:00:00","Monday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Cortez","3IS-A","IS214","314","11:00:00","13:00:00","Monday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Mariano","3IS-B","IS209","314","13:00:00","16:00:00","Monday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Duran","4IS-A","IS216","314","16:00:00","19:00:00","Monday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Duran","3IS-C","IS-ELEC2B","314","09:30:00","12:30:00","Tuesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Balmeo","4IS-A","GE-ELEC","314","13:00:00","14:00:00","Tuesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Mariano","3IS-C","IS209","314","14:00:00","17:00:00","Tuesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Judith Quintero","3IS-C","SCL9","314","17:00:00","Tuesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Balajadia","3IS-A","THY2","314","07:00:00","08:30:00","Wednesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Mildred Antonio","1IS-A","ENG20,"314","08:30:00","10:00:00","Wednesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Diaz","1IS-A","314","IS201","10:00:00","12:00:00","Wednesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Padua","","P-Pract1","314","12:00:00","13:00:00","Wednesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Ladao","3IS-B","IS211","314","13:00:00","16:00:00","Wednesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Estrella","3IT-F","ICS124","314","16:00:00","18:00:00","Wednesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Diaz","4CS-E","ICS200","314","18:00:00","21:00:00","Wednesday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("","Petition","P-CS203","314","10:00:00","11:00:00","Thursday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Cortez","3IS-B","IS214","314","11:00:00","13:00:00","Thursday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Mariano","3IS-A","IS209","314","13:00:00","16:00:00","Thursday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Balais","","P-Pract2","314","16:00:00","17:00:00","Thursday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Judith Quintero","3IS-C","SCL9","314","17:00:00","18:30:00","Thursday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Barcelo","3IS-B","IS212","314","07:00:00","10:00:00","Friday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("PD-Bundia","3IS-C","F-ELEC2","314","12:00:00","15:00:00","Friday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Barcelo","3IS-B","IS212","314","07:00:00","10:00:00","Saturday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Bartolome","4IS-A","IS-ELEC5A","314","10:00:00","13:00:00","Saturday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Ladao","3IS-B","IS-ELEC2A","314","13:00:00","14:00:00","Saturday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Duran","3CS-C","F-ELEC1","314","14:00:00","17:00:00","Saturday","class");
+
+INSERT INTO schedule (profName,section,subject,roomNumber,startTime,endTime,day,status) VALUES ("Bartolome","","P-IS208","314","17:00:00","21:00:00","Saturday","class");
