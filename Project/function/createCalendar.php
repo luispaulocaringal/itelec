@@ -121,19 +121,22 @@ class Calendar {
             
 
             $this->currentDay++;   
-        }
-        if($this->currentDate >= $today){
-            
-        
+
+
         }else{
-             
             $this->currentDate =null;
  
             $cellContent=null;
 			
-			$buttonType="disabled";
+			      $buttonType="disabled";
         }
-             
+        if(($this->currentDate < $today)&&($cellContent=null)){
+            $buttonType="disabled";
+        }
+
+        if($this->currentDate < $today){
+          $buttonType="disabled";
+        } 
          
         return '<li id="li-'.$this->currentDate.'" class="'.($cellNumber%7==1?' start ':($cellNumber%7==0?' end ':' ')).
                 ($cellContent==null?'mask':'').' clickDate"><form action="schedule.php" method="POST"><input class="'.$buttonType.' date" type="submit" value="'.$cellContent.'" name="currentDate" style="width:80px;height:80px;"><input type="hidden" value="'.$this->currentMonth.'" name="currentMonth"><input type="hidden" value="'.$this->currentYear.'" name="currentYear"></form></li>';
