@@ -1,0 +1,6 @@
+[IT001]-Logged in as administrator.
+[IT001]-Logged in as administrator.
+[IT002]-Administrator account logged out.
+[IT003]-New schedule request.
+[IT001]-Logged in as administrator.
+[IT004]-Accepted request for reservation

@@ -5,6 +5,8 @@
 		login($_POST["uname"],$_POST["pword"]);
 	}
 	if(isset($_POST["logout"])){
+		include 'function/log.php';
+		logAction("logout");
 		session_destroy();
 	}
 ?>

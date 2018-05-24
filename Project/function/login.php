@@ -9,6 +9,10 @@
 		foreach($result as $value){
 			if($value["username"]==$username && $value["password"]==$password){
 				$_SESSION["loggedin"] = "Logged-in"; 
+				if(isset($_POST["Login"])){
+					include 'function/log.php';
+					logAction("login");
+				}
 				echo '<script type="text/javascript">'; 
 				echo 'alert("Login Successful");'; 
 				echo 'window.location.href = "admin.php";';

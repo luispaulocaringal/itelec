@@ -3,7 +3,6 @@
 	if(!isset($_SESSION["loggedin"])){
 		header("Location:index.php");
 	}
-
 	include 'function/action.php';
 	$connect = new PDO('mysql:host=localhost;dbname=itelec','root','root');
 	$query = "SELECT * FROM schedule";
