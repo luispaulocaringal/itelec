@@ -12,7 +12,7 @@
 		$log_file = "log_file.txt";
 		$handle = fopen($log_file, 'a') or die('Cannot open file:  '.$log_file);
 		
-		$data = "\r\n".$logs[$log];
+		$data = "\r\n".$logs[$log]."[".date("Y-m-d").date("h:i:sa")."]";
 		fwrite($handle, $data);
 		
 		fclose($handle);
