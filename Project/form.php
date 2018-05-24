@@ -14,12 +14,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Home | Classroom Reservation System</title>
+		<title>Reservation Form | Classroom Reservation System</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<style>.modal-header, h4, .close {
+		<style>
+			.modal-header, h4, .close {
 				background-color: #5cb85c;
 				color:white !important;
 				text-align: center;
@@ -142,6 +143,16 @@
 				margin-top:20px;
 				box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.50), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
 			}
+			.field{
+				border:2px solid #922B21;
+				border-radius:4px;
+				margin-bottom:10px;
+				text-align:center;
+			}
+			td{
+				text-align:center;
+				width:250px;
+			}
 		</style>
 	</head>
 	<body>
@@ -169,32 +180,32 @@
 				</div>
 			</nav>
 			<div class="contain">
-				<center><h1 class="rrf">Room Reservation Form</h1>
+				<center><h1 style="font-weight:bold;">Room Reservation Form</h1>
 				<form method="POST">
 					<table>
 						<tr>
 							<td>Name of Professor</td>
-							<td><input type="text" name="profName" required="true" class="field" value="Luis Caringal"></td>
+							<td><input type="text" name="profName" required="true" class="field"></td>
 						</tr>
 						<tr>
 							<td>Section</td>
-							<td><input type="text" name="section" required="true" class="field" value="3IT-I"></td>
+							<td><input type="text" name="section" required="true" class="field" ></td>
 						</tr>
 						<tr>
 							<td>Subject</td>
-							<td><input class="field" type="text" name="subject" value="ICS 114"></td>
+							<td><input class="field" type="text" name="subject"></td>
 						</tr>
 						<tr>
 							<td>Room Number</td>
-							<td><input class="field" type="text" name="roomNumber" value="<?php echo $_SESSION["roomNumber"];?>"></td>
+							<td><input class="field" type="text" name="roomNumber" value="<?php echo $_SESSION["roomNumber"];?>" readonly></td>
 						</tr>
 						<tr>
 							<td>Date</td>
-							<td><input class="field" type="text" name="date" value="<?php echo $_SESSION["date"];?>"></td>
+							<td><input class="field" type="text" name="date" value="<?php echo $_SESSION["date"];?>" readonly></td>
 						</tr>
 						<tr>
 							<td>Start Time (24hr format)</td>
-							<td><input class="field" type="text" name="startTime" value="<?php echo $_POST["time"];?>"></td>
+							<td><input class="field" type="text" name="startTime" value="<?php echo $_POST["time"];?>" readonly></td>
 						</tr>
 						<tr>
 							<td>Duration (Minutes)</td>
@@ -219,7 +230,7 @@
 						</tr>
 					</table><br>
 					<label>Reason for Reservation</label><br>
-					<textarea name ="rfr" placeholder="Enter reason of reserving.." required="true">Make Up Class</textarea><br><br>
+					<textarea name ="rfr" placeholder="Enter reason of reserving.." required="true"></textarea><br><br>
 					<input class="button" type="submit" name="submit" value="Submit"/><br><br>
 				</form></center>
 			</div>
