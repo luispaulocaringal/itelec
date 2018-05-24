@@ -27,6 +27,7 @@ class Calendar {
     private $daysInMonth=0;
      
     private $naviHref= null;
+
      
     /********************* PUBLIC **********************/  
         
@@ -99,6 +100,7 @@ class Calendar {
     */
     private function _showDay($cellNumber){
 		$buttonType = null;
+    $today = date('Y-m-d');
          
         if($this->currentDay==0){
              
@@ -116,9 +118,13 @@ class Calendar {
             $this->currentDate = date('Y-m-d',strtotime($this->currentYear.'-'.$this->currentMonth.'-'.($this->currentDay)));
              
             $cellContent = $this->currentDay;
-             
+            
+
             $this->currentDay++;   
-             
+        }
+        if($this->currentDate >= $today){
+            
+        
         }else{
              
             $this->currentDate =null;
