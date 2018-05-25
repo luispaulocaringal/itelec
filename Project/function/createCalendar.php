@@ -125,16 +125,11 @@ class Calendar {
 
         }else{
             $this->currentDate =null;
- 
-            $cellContent=null;
 			
 			      $buttonType="disabled";
         }
-        if(($this->currentDate < $today)&&($cellContent=null)){
-            $buttonType="disabled";
-        }
-
         if($this->currentDate < $today){
+
           $buttonType="disabled";
         } 
          
