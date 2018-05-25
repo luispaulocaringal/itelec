@@ -4,7 +4,7 @@
 		header("Location:index.php");
 	}
 	include 'function/action.php';
-	$connect = new PDO('mysql:host=localhost;dbname=itelec','root','root');
+	$connect = new PDO('mysql:host=localhost;dbname=itelec','root','1234');
 	$query = "SELECT * FROM schedule";
 	$statement = $connect->prepare($query);
 	$statement->execute();
@@ -215,20 +215,21 @@
 							echo "<h3>Reservation Request/s</h3>";
 							echo "<br class='space'>";
 							echo "<table align='center' class='table' id='table_co'>";
-							echo "<tr>
-									<th class='headr'>ID</th>
-									<th class='headr'>Professor Name</th>
-									<th class='headr'>Subject</th>
-									<th class='headr'>Section</th>
-									<th class='headr'>Room</th>
-									<th class='headr'>Start Time</th>
-									<th class='headr'>End Time</th>
-									<th class='headr'>Date</th>
-									<th class='headr'>Day</th>
-									<th class='headr'>Reason for Reserving</th>
-									<th class='headr'>Status</th>
-									<th class='headrr'>Action</th>
-								</tr>";
+              echo "<tr>
+              <th class='headr'>ID</th>
+              <th class='headr'>Professor Name</th>
+              <th class='headr'>Subject</th>
+              <th class='headr'>Section</th>
+              <th class='headr'>Room</th>
+              <th class='headr'>Start Time</th>
+              <th class='headr'>End Time</th>
+              <th class='headr'>Date</th>
+              <th class='headr'>Day</th>
+              <th class='headr'>Reason for Reserving</th>
+              <th class='headr'>Status</th>
+              <th class='headr'>Action</th>
+              </tr>";
+  
 						foreach($data as $value){
 							if($value["status"]=="pending"){
 								$content = "<tr>
@@ -247,24 +248,28 @@
 											</tr>";
 								echo $content;
 							}
-						}					
+						}				     
+
 							echo "</table>";
+              if(!$result){
+                echo "<div class='container'> No Pending Reservations </div>";
+              }
 							echo "<h3>Approved Reservation/s</h3>";
 						echo "<table align='center' class='table' id='table_co'>";
-						echo "<tr>
-								<th class='headr'>ID</th>
-								<th class='headr'>Professor Name</th>
-								<th class='headr'>Subject</th>
-								<th class='headr'>Section</th>
-								<th class='headr'>Room</th>
-								<th class='headr'>Start Time</th>
-								<th class='headr'>End Time</th>
-								<th class='headr'>Date</th>
-								<th class='headr'>Day</th>
-								<th class='headr'>Reason for Reserving</th>
-								<th class='headr'>Status</th>
-								<th class='headr'>Action</th>
-							</tr>";
+              echo "<tr>
+                <th class='headr'>ID</th>
+                <th class='headr'>Professor Name</th>
+                <th class='headr'>Subject</th>
+                <th class='headr'>Section</th>
+                <th class='headr'>Room</th>
+                <th class='headr'>Start Time</th>
+                <th class='headr'>End Time</th>
+                <th class='headr'>Date</th>
+                <th class='headr'>Day</th>
+                <th class='headr'>Reason for Reserving</th>
+                <th class='headr'>Status</th>
+                <th class='headr'>Action</th>
+              </tr>";
 						unset($value);
 						echo "<br><br>";
 						foreach($data as $value){
@@ -292,6 +297,9 @@
 							}
 						}
 						echo "</table>";
+            if(!$result){
+              echo "<div class='container'> No Approved Reservation </div>";
+            }
 					?>
 			</div>
         </div>
