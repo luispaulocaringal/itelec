@@ -4,7 +4,7 @@
 		header("Location:index.php");
 	}
 	include 'function/action.php';
-	$connect = new PDO('mysql:host=localhost;dbname=itelec','root','1234');
+	$connect = new PDO('mysql:host=localhost;dbname=itelec','root','root');
 	$query = "SELECT * FROM schedule";
 	$statement = $connect->prepare($query);
 	$statement->execute();
@@ -251,7 +251,7 @@
 						}				     
 
 							echo "</table>";
-              if(!$result){
+              if(empty($result["status"]=="pending")){
                 echo "<div class='container'> No Pending Reservations </div>";
               }
 							echo "<h3>Approved Reservation/s</h3>";
@@ -297,7 +297,7 @@
 							}
 						}
 						echo "</table>";
-            if(!$result){
+            if(empty($result["status"]=="reserved")){
               echo "<div class='container'> No Approved Reservation </div>";
             }
 					?>
