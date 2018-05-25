@@ -3,3 +3,39 @@
 [2018-05-25][11:09:22pm][IT004]-Accepted request for reservation
 [2018-05-25][11:09:24pm][IT006]-Request for reservation cancelled
 [2018-05-25][11:09:26pm][IT002]-Administrator account logged out.
+[2018-05-25][11:22:13pm][IT001]-Logged in as administrator.
+[2018-05-25][11:26:24pm][IT003]-New schedule request.
+[2018-05-25][11:29:43pm][IT003]-New schedule request.
+[2018-05-25][11:32:04pm][IT003]-New schedule request.
+[2018-05-25][11:40:51pm][IT003]-New schedule request.
+[2018-05-25][11:42:36pm][IT005]-Declined request for reservation
+[2018-05-25][11:42:38pm][IT005]-Declined request for reservation
+[2018-05-25][11:42:39pm][IT005]-Declined request for reservation
+[2018-05-25][11:42:39pm][IT005]-Declined request for reservation
+[2018-05-25][11:49:16pm][IT003]-New schedule request.
+[2018-05-25][11:49:35pm][IT005]-Declined request for reservation
+[2018-05-25][11:49:36pm][IT005]-Declined request for reservation
+[2018-05-25][11:49:37pm][IT005]-Declined request for reservation
+[2018-05-25][11:50:29pm][IT003]-New schedule request.
+[2018-05-25][11:50:50pm][IT003]-New schedule request.
+[2018-05-25][11:51:19pm][IT005]-Declined request for reservation
+[2018-05-25][11:51:21pm][IT005]-Declined request for reservation
+[2018-05-25][11:51:22pm][IT005]-Declined request for reservation
+[2018-05-25][11:56:04pm][IT005]-Declined request for reservation
+[2018-05-25][11:57:09pm][IT005]-Declined request for reservation
+[2018-05-25][11:58:48pm][IT005]-Declined request for reservation
+[2018-05-25][11:58:48pm][IT005]-Declined request for reservation
+[2018-05-26][12:01:59am][IT005]-Declined request for reservation
+[2018-05-26][12:02:00am][IT005]-Declined request for reservation
+[2018-05-26][12:08:05am][IT005]-Declined request for reservation
+[2018-05-26][12:08:10am][IT005]-Declined request for reservation
+[2018-05-26][12:08:11am][IT005]-Declined request for reservation
+[2018-05-26][12:08:12am][IT005]-Declined request for reservation
+[2018-05-26][12:10:17am][IT005]-Declined request for reservation
+[2018-05-26][12:11:02am][IT005]-Declined request for reservation
+[2018-05-26][12:13:58am][IT004]-Accepted request for reservation
+[2018-05-26][12:19:07am][IT006]-Request for reservation cancelled
+[2018-05-26][12:19:19am][IT003]-New schedule request.
+[2018-05-26][12:20:35am][IT005]-Declined request for reservation
+[2018-05-26][12:21:17am][IT003]-New schedule request.
+[2018-05-26][12:21:45am][IT005]-Declined request for reservation
