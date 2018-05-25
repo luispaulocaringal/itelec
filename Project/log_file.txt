@@ -39,3 +39,5 @@
 [2018-05-26][12:20:35am][IT005]-Declined request for reservation
 [2018-05-26][12:21:17am][IT003]-New schedule request.
 [2018-05-26][12:21:45am][IT005]-Declined request for reservation
+[2018-05-26][12:26:45am][IT003]-New schedule request.
+[2018-05-26][12:27:51am][IT004]-Accepted request for reservation

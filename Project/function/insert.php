@@ -10,15 +10,34 @@
 		$endTime = date("H:i:s",strtotime("+".$duration." minutes",strtotime($startTime)));
 			
 		$class = loadClass($roomNumber,$day);
-		//$pending = loadPending($roomNumber,$date);
-		//$reserved = loadReserved($roomNumber,$date);
+		$pending = loadPending($roomNumber,$date);
+		$reserved = loadReserved($roomNumber,$date);
 		$boolean = false;
 		foreach($class as $val){
 			if(strtotime($endTime)>strtotime($val["startTime"])&&strtotime($endTime)<=strtotime($val["endTime"])){
-				echo "hello";
 				$boolean = true;		
 				echo '<script type="text/javascript">'; 
 				echo 'alert("Classes are scheduled during those periods!");'; 
+				echo 'window.location.href = "schedule.php"';
+				echo '</script>';
+				break;
+			}
+		}
+		foreach($pending as $val){
+			if(strtotime($endTime)>strtotime($val["startTime"])&&strtotime($endTime)<=strtotime($val["endTime"])){
+				$boolean = true;		
+				echo '<script type="text/javascript">'; 
+				echo 'alert("Time span is currently for approval");'; 
+				echo 'window.location.href = "schedule.php"';
+				echo '</script>';
+				break;
+			}
+		}
+		foreach($reserved as $val){
+			if(strtotime($endTime)>strtotime($val["startTime"])&&strtotime($endTime)<=strtotime($val["endTime"])){
+				$boolean = true;		
+				echo '<script type="text/javascript">'; 
+				echo 'alert("Classes are reserved during those periods!");'; 
 				echo 'window.location.href = "schedule.php"';
 				echo '</script>';
 				break;
