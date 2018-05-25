@@ -12,7 +12,8 @@
 		$log_file = "log_file.txt";
 		$handle = fopen($log_file, 'a') or die('Cannot open file:  '.$log_file);
 		
-		$data = "\r\n".$logs[$log]."[".date("Y-m-d")."][".date("h:i:sa")."]";
+		date_default_timezone_set("Asia/Manila");
+		$data = "\r\n"."[".date("Y-m-d")."][".date("h:i:sa")."]".$logs[$log];
 		fwrite($handle, $data);
 		
 		fclose($handle);

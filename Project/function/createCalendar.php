@@ -1,9 +1,7 @@
 <?php
-/**
-*@author  Xu Ding
-*@email   thedilab@gmail.com
-*@website http://www.StarTutorial.com
-**/
+/*
+    Credits to Xu Ding for the calendar template
+*/
 class Calendar {  
      
     /**
@@ -100,7 +98,7 @@ class Calendar {
     */
     private function _showDay($cellNumber){
 		$buttonType = null;
-    $today = date('Y-m-d');
+        $today = date('Y-m-d');
          
         if($this->currentDay==0){
              

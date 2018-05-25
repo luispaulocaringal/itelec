@@ -2,3 +2,17 @@
 [IT001]-Logged in as administrator.[2018-05-24][02:38:25pm]
 [IT005]-Declined request for reservation[2018-05-24][02:38:32pm]
 [IT006]-Request for reservation cancelled[2018-05-24][02:38:34pm]
+[IT002]-Administrator account logged out.[2018-05-24][03:00:26pm]
+[IT001]-Logged in as administrator.[2018-05-24][03:00:45pm]
+[IT004]-Accepted request for reservation[2018-05-24][03:00:48pm]
+[IT005]-Declined request for reservation[2018-05-24][03:00:49pm]
+[IT003]-New schedule request.[2018-05-25][06:18:48am]
+[IT001]-Logged in as administrator.[2018-05-25][06:19:37am]
+[IT006]-Request for reservation cancelled[2018-05-25][06:20:14am]
+[IT004]-Accepted request for reservation[2018-05-25][06:20:17am]
+[IT001]-Logged in as administrator.[2018-05-25][02:37:25pm]
+[IT006]-Request for reservation cancelled[2018-05-25][02:37:30pm]
+[2018-05-25][02:39:07pm][IT002]-Administrator account logged out.
+[2018-05-25][02:39:50pm][IT002]-Administrator account logged out.
+[2018-05-25][10:41:15pm][IT002]-Administrator account logged out.
+[2018-05-25][10:41:21pm][IT001]-Logged in as administrator.

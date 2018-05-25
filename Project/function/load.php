@@ -100,7 +100,7 @@
 		for($time = strtotime($val["startTime"]);$time<=strtotime("-30 minutes",strtotime($val["endTime"]));$time = strtotime("+30 minutes",$time)){
 			$status[date("H:i:s",$time)] = "class";
 			$subject[date("H:i:s",$time)] = $val["subject"];
-			$profName[date("H:i:s",$time)] = $val["profName"];
+			$profName[date("H:i:s",$time)] = " - ".$val["profName"];
 		}
 	}
 	foreach($pending as $val){
@@ -113,7 +113,7 @@
 		for($time = strtotime($val["startTime"]);$time<=strtotime("-30 minutes",strtotime($val["endTime"]));$time = strtotime("+30 minutes",$time)){
 			$status[date("H:i:s",$time)] = "reserved";
 			$subject[date("H:i:s",$time)] = $val["subject"];
-			$profName[date("H:i:s",$time)] = $val["profName"];
+			$profName[date("H:i:s",$time)] = " - ".$val["profName"];
 		}
 	}
 		//print_r($status);
