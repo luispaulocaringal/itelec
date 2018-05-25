@@ -1,9 +1,7 @@
 <?php
-/**
-*@author  Xu Ding
-*@email   thedilab@gmail.com
-*@website http://www.StarTutorial.com
-**/
+/*
+    Credits to Xu Ding for the calendar template
+*/
 class Calendar {  
      
     /**
@@ -99,9 +97,10 @@ class Calendar {
     * create the li element for ul
     */
     private function _showDay($cellNumber){
-    date_default_timezone_set('Manila');
+        date_default_timezone_set('Asia/Manila');
 		$buttonType = null;
-    $today = date('Y-m-d');
+        $today = date('Y-m-d');
+        $cellContent = null;
          
         if($this->currentDay==0){
              
