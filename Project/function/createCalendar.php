@@ -99,6 +99,7 @@ class Calendar {
     * create the li element for ul
     */
     private function _showDay($cellNumber){
+    date_default_timezone_set('Manila');
 		$buttonType = null;
     $today = date('Y-m-d');
          
