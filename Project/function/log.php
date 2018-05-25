@@ -5,7 +5,8 @@
 					"request"=>"[IT003]-New schedule request.",
 					"accept"=>"[IT004]-Accepted request for reservation",
 					"Decline"=>"[IT005]-Declined request for reservation",
-					"Cancel"=>"[IT006]-Request for reservation cancelled"
+					"Cancel"=>"[IT006]-Request for reservation cancelled",
+					"backup"=>"[IT007]-Data has been backed up."
 					);
 		
 		

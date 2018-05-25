@@ -259,12 +259,12 @@
 											</tr>";
 								echo $content;
 							}
-						}				     
-
-							echo "</table>";
-              if(empty($result["status"]=="pending")){
-                echo "<div class='container'> No Pending Reservations </div>";
-              }
+						}		     
+	echo "</table>";
+	
+	if(empty($value["status"]=="pending")){
+		echo "<div class='container'> No Pending Reservations </div>";
+	  }		
 							echo "<h3>Approved Reservation/s</h3>";
 						echo "<table align='center' class='table' id='table_co'>";
               echo "<tr>
@@ -308,8 +308,8 @@
 							}
 						}
 						echo "</table>";
-            if(empty($result["status"]=="reserved")){
-              echo "<div class='container'> No Approved Reservation </div>";
+            if(empty($value["status"]=="reserved")){
+			  echo "<div class='container'> No Approved Reservation </div>";
             }
 					?>
 			</div>
