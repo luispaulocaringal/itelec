@@ -4,6 +4,7 @@
 		header("Location:index.php");
 	}
 	include 'function/action.php';
+	include 'function/backup.php';
 	$connect = new PDO('mysql:host=localhost;dbname=itelec','root','root');
 	$query = "SELECT * FROM schedule";
 	$statement = $connect->prepare($query);
@@ -29,6 +30,9 @@
 	}
 	if(isset($_POST["action"])){
 		action($_POST["action"],$_POST["reqID"]);
+	}
+	if(isset($_POST["backup"])){
+		backup();
 	}
 ?>
 <!DOCTYPE html>
@@ -207,9 +211,16 @@
                     	<img src="img/ustlogo.png" width="775" height="71" class="ustlogo"><br>
 						<h2 class="cr"> CLASSROOM RESERVATIONS</h2>
 						<small class="cr2"> Accept/Decline room reservations.</small><br>
+						<div class="col-lg-2" style="float:right">
 						<form method="POST" action="index.php">
 							<button type="submit" name="logout" class="logout">Logout</button>
 						</form>
+						</div>
+						<div class="col-md-2" style="float:right">
+						<form method="POST">
+							<button type="submit" name="backup" class="logout">Backup</button>
+						</form>
+						</div>
 					</div><br><br>
                 	<?php	
 							echo "<h3>Reservation Request/s</h3>";

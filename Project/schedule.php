@@ -193,6 +193,10 @@
 				height:24px;
 				background-color:transparent;
 			}
+			.field:hover{
+				background-color:#ddd;
+				transition:0.1s;
+			}
 			.class{
 				background-color:grey;
 				pointer-events:none;
@@ -275,9 +279,9 @@
 						</div>
 						<div class="row">
 							<div class="col-md-9">
-								<center><h3>Schedule</h3></center><br>
 								<?php
 									if(isset($_POST["room"])){
+										echo "<center><h3>Schedule for Room ".$_POST["room"]."</h3></center><br>";
 										$_SESSION["roomNumber"] = $_POST["room"];
 										loadSchedule($_SESSION["roomNumber"],$_SESSION["date"],$_SESSION["day"]);
 									}
@@ -285,6 +289,9 @@
 							</div>
 							<div class="col-md-3">
 								<center><h3>Legend</h3></center>
+								<div style='background-color:grey'><h5 style='text-align:center;color:white;'>Class</h5></div>
+								<div style='background-color:#F39C12'><h5 style='text-align:center;color:white;'>Pending</h5></div>
+								<div style='background-color:#27AE60'><h5 style='text-align:center;color:white;'>Reserved</h5></div>
 							</div>
 						</div>
 					</div>

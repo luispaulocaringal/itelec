@@ -67,34 +67,34 @@
 						"20:00:00"=>null,
 						"20:30:00"=>null);
 		
-		$subject = array("07:00:00"=>"Available",
-						"07:30:00"=>"Available",
-						"08:00:00"=>"Available",
-						"08:30:00"=>"Available",
-						"09:00:00"=>"Available",
-						"09:30:00"=>"Available",
-						"10:00:00"=>"Available",
-						"10:30:00"=>"Available",
-						"11:00:00"=>"Available",
-						"11:30:00"=>"Available",
-						"12:00:00"=>"Available",
-						"12:30:00"=>"Available",
-						"13:00:00"=>"Available",
-						"13:30:00"=>"Available",
-						"14:00:00"=>"Available",
-						"14:30:00"=>"Available",
-						"15:00:00"=>"Available",
-						"15:30:00"=>"Available",
-						"16:00:00"=>"Available",
-						"16:30:00"=>"Available",
-						"17:00:00"=>"Available",
-						"17:30:00"=>"Available",
-						"18:00:00"=>"Available",
-						"18:30:00"=>"Available",
-						"19:00:00"=>"Available",
-						"19:30:00"=>"Available",
-						"20:00:00"=>"Available",
-						"20:30:00"=>"Available");
+		$subject = array("07:00:00"=>"<font color='#27AE60'>Available</font>",
+						"07:30:00"=>"<font color='#27AE60'>Available</font>",
+						"08:00:00"=>"<font color='#27AE60'>Available</font>",
+						"08:30:00"=>"<font color='#27AE60'>Available</font>",
+						"09:00:00"=>"<font color='#27AE60'>Available</font>",
+						"09:30:00"=>"<font color='#27AE60'>Available</font>",
+						"10:00:00"=>"<font color='#27AE60'>Available</font>",
+						"10:30:00"=>"<font color='#27AE60'>Available</font>",
+						"11:00:00"=>"<font color='#27AE60'>Available</font>",
+						"11:30:00"=>"<font color='#27AE60'>Available</font>",
+						"12:00:00"=>"<font color='#27AE60'>Available</font>",
+						"12:30:00"=>"<font color='#27AE60'>Available</font>",
+						"13:00:00"=>"<font color='#27AE60'>Available</font>",
+						"13:30:00"=>"<font color='#27AE60'>Available</font>",
+						"14:00:00"=>"<font color='#27AE60'>Available</font>",
+						"14:30:00"=>"<font color='#27AE60'>Available</font>",
+						"15:00:00"=>"<font color='#27AE60'>Available</font>",
+						"15:30:00"=>"<font color='#27AE60'>Available</font>",
+						"16:00:00"=>"<font color='#27AE60'>Available</font>",
+						"16:30:00"=>"<font color='#27AE60'>Available</font>",
+						"17:00:00"=>"<font color='#27AE60'>Available</font>",
+						"17:30:00"=>"<font color='#27AE60'>Available</font>",
+						"18:00:00"=>"<font color='#27AE60'>Available</font>",
+						"18:30:00"=>"<font color='#27AE60'>Available</font>",
+						"19:00:00"=>"<font color='#27AE60'>Available</font>",
+						"19:30:00"=>"<font color='#27AE60'>Available</font>",
+						"20:00:00"=>"<font color='#27AE60'>Available</font>",
+						"20:30:00"=>"<font color='#27AE60'>Available</font>");
 						
 	foreach($class as $val){
 		for($time = strtotime($val["startTime"]);$time<=strtotime("-30 minutes",strtotime($val["endTime"]));$time = strtotime("+30 minutes",$time)){
@@ -116,7 +116,6 @@
 			$profName[date("H:i:s",$time)] = " - ".$val["profName"];
 		}
 	}
-		//print_r($status);
 		$content = "
 					<form method='POST' action='form.php'>
 						<table align='center'>
