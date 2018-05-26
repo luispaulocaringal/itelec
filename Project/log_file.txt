@@ -9,3 +9,6 @@
 [2018-05-26][01:40:09am][IT004]-Accepted request for reservation
 [2018-05-26][01:42:30am][IT002]-Administrator account logged out.
 [2018-05-26][01:43:56am][IT001]-Logged in as administrator.
+[2018-05-26][11:53:28am][IT001]-Logged in as administrator.
+[2018-05-26][11:53:36am][IT006]-Request for reservation cancelled
+[2018-05-26][11:56:14am][IT002]-Administrator account logged out.
