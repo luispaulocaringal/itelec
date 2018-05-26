@@ -246,6 +246,7 @@
 			.disabled{
 				pointer-events:none;
 				background-color:#922B21;
+				color:white;
 			}
 			.contain {
 				width: 1200px;

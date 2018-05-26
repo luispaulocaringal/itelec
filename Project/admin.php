@@ -227,40 +227,39 @@
 							echo "<br class='space'>";
 							echo "<table align='center' class='table' id='table_co'>";
               echo "<tr>
-              <th class='headr'>ID</th>
-              <th class='headr'>Professor Name</th>
-              <th class='headr'>Subject</th>
-              <th class='headr'>Section</th>
-              <th class='headr'>Room</th>
-              <th class='headr'>Start Time</th>
-              <th class='headr'>End Time</th>
-              <th class='headr'>Date</th>
-              <th class='headr'>Day</th>
-              <th class='headr'>Reason for Reserving</th>
-              <th class='headr'>Status</th>
-              <th class='headr'>Action</th>
-              </tr>";
-  
-						foreach($data as $value){
-							if($value["status"]=="pending"){
-								$content = "<tr>
-												<td class='buddy'>".$value["ID"]."</td>
-												<td class='buddy'>".$value["profName"]."</td>
-												<td class='buddy'>".$value["subject"]."</td>
-												<td class='buddy'>".$value["section"]."</td>
-												<td class='buddy'>".$value["roomNumber"]."</td>
-												<td class='buddy'>".$value["startTime"]."</td>
-												<td class='buddy'>".$value["endTime"]."</td>
-												<td class='buddy'>".$value["date"]."</td>
-												<td class='buddy'>".$value["day"]."</td>
-												<td class='buddy'>".$value["rfr"]."</td>
-												<td class='buddy'>".$value["status"]."</td>
-												<td class='buddyz'><form method='POST'><button type='submit'  name='action' value='Accept' class='btn btn-info'>Accept</button>&nbsp;<button type='submit' name='action' value='Decline' class='btn btn-danger'>Decline</button><br><input type='hidden' value='".$value["ID"]."'name='reqID'></form></td>
-											</tr>";
-								echo $content;
-							}
-						}		     
-	echo "</table>";
+						<th class='headr'>ID</th>
+						<th class='headr'>Professor Name</th>
+						<th class='headr'>Subject</th>
+						<th class='headr'>Section</th>
+						<th class='headr'>Room</th>
+						<th class='headr'>Start Time</th>
+						<th class='headr'>End Time</th>
+						<th class='headr'>Date</th>
+						<th class='headr'>Day</th>
+						<th class='headr'>Reason for Reserving</th>
+						<th class='headr'>Status</th>
+						<th class='headr'>Action</th>
+					</tr>";
+					foreach($data as $value){
+						if($value["status"]=="pending"){
+							$content = "<tr>
+											<td class='buddy'>".$value["ID"]."</td>
+											<td class='buddy'>".$value["profName"]."</td>
+											<td class='buddy'>".$value["subject"]."</td>
+											<td class='buddy'>".$value["section"]."</td>
+											<td class='buddy'>".$value["roomNumber"]."</td>
+											<td class='buddy'>".$value["startTime"]."</td>
+											<td class='buddy'>".$value["endTime"]."</td>
+											<td class='buddy'>".$value["date"]."</td>
+											<td class='buddy'>".$value["day"]."</td>
+											<td class='buddy'>".$value["rfr"]."</td>
+											<td class='buddy'>".$value["status"]."</td>
+											<td class='buddyz'><form method='POST'><button type='submit'  name='action' value='Accept' class='btn btn-info'>Accept</button>&nbsp;<button type='submit' name='action' value='Decline' class='btn btn-danger'>Decline</button><br><input type='hidden' value='".$value["ID"]."'name='reqID'></form></td>
+										</tr>";
+							echo $content;
+						}
+					}		     
+					echo "</table>";
 							echo "<h3>Approved Reservation/s</h3>";
 						echo "<table align='center' class='table' id='table_co'>";
               echo "<tr>

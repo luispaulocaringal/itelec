@@ -12,3 +12,20 @@
 [2018-05-26][11:53:28am][IT001]-Logged in as administrator.
 [2018-05-26][11:53:36am][IT006]-Request for reservation cancelled
 [2018-05-26][11:56:14am][IT002]-Administrator account logged out.
+[2018-05-26][12:12:33pm][IT003]-New schedule request.
+[2018-05-26][12:16:44pm][IT003]-New schedule request.
+[2018-05-26][12:18:16pm][IT003]-New schedule request.
+[2018-05-26][12:22:41pm][IT003]-New schedule request.
+[2018-05-26][12:23:02pm][IT003]-New schedule request.
+[2018-05-26][12:23:56pm][IT003]-New schedule request.
+[2018-05-26][12:25:53pm][IT001]-Logged in as administrator.
+[2018-05-26][12:32:31pm][IT007]-Data has been backed up.
+[2018-05-26][12:32:36pm][IT007]-Data has been backed up.
+[2018-05-26][12:40:39pm][IT005]-Declined request for reservation
+[2018-05-26][12:40:40pm][IT005]-Declined request for reservation
+[2018-05-26][12:40:41pm][IT005]-Declined request for reservation
+[2018-05-26][12:40:41pm][IT005]-Declined request for reservation
+[2018-05-26][12:40:42pm][IT005]-Declined request for reservation
+[2018-05-26][12:40:42pm][IT005]-Declined request for reservation
+[2018-05-26][12:40:43pm][IT005]-Declined request for reservation
+[2018-05-26][12:40:44pm][IT005]-Declined request for reservation
